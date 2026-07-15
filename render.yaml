@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: kafinal
+    runtime: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: API_URL
+        value: https://knowledgeshop.runasp.net/api
