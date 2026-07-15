@@ -1,7 +1,5 @@
 import { NavLink } from 'react-router-dom'
 
-var response = axios.get('${vite_burl}/products')
-
 export default function Navbar() {
   return (
     <nav>
