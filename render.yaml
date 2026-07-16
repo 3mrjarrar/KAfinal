@@ -7,3 +7,5 @@ services:
     envVars:
       - key: API_URL
         value: https://knowledgeshop.runasp.net/api
+      - key: NODE_VERSION
+        value: 20.18.0
