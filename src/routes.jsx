@@ -6,18 +6,23 @@ import Cart from './pages/cart'
 import Login from './pages/login'
 import Register from './pages/register'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'products', element: <Products /> },
+        { path: 'cart', element: <Cart /> },
+        { path: 'login', element: <Login /> },
+        { path: 'register', element: <Register /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <MainLayout />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: 'products', element: <Products /> },
-      { path: 'cart', element: <Cart /> },
-      { path: 'login', element: <Login /> },
-      { path: 'register', element: <Register /> },
-    ],
-  },
-])
+    basename: '/KAFinal',
+  }
+)
 
 export default router
