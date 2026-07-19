@@ -21,7 +21,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: '/KAFinal',
+    basename: '/KAfinal',
   }
 )
 
